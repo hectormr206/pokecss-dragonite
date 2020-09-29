@@ -1,0 +1,12 @@
+:root {
+  --background: #202020;
+  --border-color: #010100;
+  --skin-color: #f2b56d;
+  --skin-color-with-light: #f4c68c;
+  --skin-color-with-shadow: #747657;
+  --internal-wing-color: #2dac9c;
+  --chest-color: #faefc9;
+  --eye-sclera-color: #fff;
+  --eye-pupil-color: #6f7255;
+  --eye-iris-color: #010100;
+}

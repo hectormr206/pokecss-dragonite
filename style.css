@@ -1,0 +1,1380 @@
+/*-- Order of declaration --*/
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
+/* Misc */
+
+html,
+body {
+  /* position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin: 0;
+  padding: 0;
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: var(--background);
+}
+
+.img {
+  width: 620px;
+  min-width: 620px;
+  height: 620px;
+}
+
+.container {
+  /* position: absolute;
+  width: 620px;
+  height: 620px; */
+}
+
+/*-- head --*/
+
+.head {
+  position: absolute;
+  top: 0px;
+  left: 87px;
+}
+
+.head__antenna-edge-left,
+.head__antenna-edge-right {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+  z-index: 2;
+}
+
+.head__antenna-left {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(
+    17% 29%,
+    14% 30%,
+    11% 35%,
+    4% 50%,
+    2% 59%,
+    3% 69%,
+    5% 74%,
+    8% 78%,
+    12% 82%,
+    17% 85%,
+    26% 87%,
+    32% 86%,
+    42% 83%,
+    49% 80%,
+    56% 76%,
+    62% 73%,
+    67% 72%,
+    74% 73%,
+    80% 75%,
+    86% 80%,
+    90% 87%,
+    92% 84%,
+    89% 80%,
+    86% 76%,
+    81% 72%,
+    76% 70%,
+    69% 69%,
+    62% 70%,
+    56% 73%,
+    49% 77%,
+    43% 80%,
+    34% 83%,
+    27% 84%,
+    22% 83%,
+    19% 82%,
+    15% 80%,
+    10% 76%,
+    7% 71%,
+    5% 64%,
+    5% 57%,
+    7% 49%,
+    10% 43%,
+    14% 37%,
+    16% 34%,
+    18% 31%
+  );
+}
+
+.head__antenna-right {
+  position: relative;
+  top: -100px;
+  left: 145px;
+  width: 126px;
+  height: 83px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(
+    97% 2%,
+    98% 7%,
+    98.5% 12%,
+    98.5% 20%,
+    97% 31%,
+    95% 39%,
+    92% 47%,
+    87% 54%,
+    80% 60%,
+    75% 62%,
+    68% 63%,
+    59% 63%,
+    50% 61%,
+    42% 59%,
+    35% 60%,
+    27% 62%,
+    19% 67%,
+    15% 71%,
+    9% 80%,
+    7% 85%,
+    6% 90%,
+    6% 94%,
+    4% 97%,
+    2% 97%,
+    1% 94%,
+    2% 90%,
+    3% 87%,
+    4% 85%,
+    5% 82%,
+    6% 80%,
+    7% 78%,
+    11% 71%,
+    14% 67%,
+    19% 63%,
+    26% 59%,
+    32% 57%,
+    41% 56%,
+    49% 58%,
+    56% 59%,
+    65% 60%,
+    73% 59%,
+    79% 57%,
+    84% 53%,
+    88% 48%,
+    92% 40%,
+    93% 37%,
+    95% 29%,
+    95.5% 19%,
+    95% 12%,
+    95% 3%
+  );
+}
+
+.head__skull {
+  position: absolute;
+  top: 56px;
+  left: 86px;
+  width: 109px;
+  height: 100px;
+  background-color: var(--skin-color);
+  clip-path: ellipse(50% 50% at 50% 50%);
+  z-index: 1;
+  opacity: 0;
+}
+
+.head__skull-edge-one {
+  position: absolute;
+  top: -300px;
+  left: -416px;
+  width: 112px;
+  height: 126px;
+  background-color: var(--border-color);
+  clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+.head__skull-edge-two {
+  position: absolute;
+  top: -300px;
+  left: -416px;
+  width: 108px;
+  height: 115px;
+  background-color: var(--border-color);
+  clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+.head__skull-edge-three {
+  position: absolute;
+  top: -205px;
+  left: -347px;
+  width: 14px;
+  height: 45px;
+  background-color: var(--border-color);
+  transform: rotate(50deg);
+  clip-path: ellipse(50% 50% at 50% 58%);
+}
+
+.head__skull-one {
+  position: absolute;
+  top: -298px;
+  left: -415px;
+  width: 106px;
+  height: 109px;
+  background-color: var(--skin-color);
+  clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+.head__skull-two {
+  position: absolute;
+  top: -206px;
+  left: -348px;
+  width: 16px;
+  height: 38px;
+  background-color: var(--skin-color);
+  transform: rotate(48deg);
+  clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+.head__nose-edge-one {
+  position: absolute;
+  top: -214px;
+  left: -428px;
+  width: 75px;
+  height: 70px;
+  background-color: var(--border-color);
+  transform: rotate(23deg);
+  clip-path: ellipse(50% 50% at 50% 25%);
+}
+
+.head__nose-center-one {
+  position: absolute;
+  top: -214px;
+  left: -424px;
+  width: 74px;
+  height: 60px;
+  background-color: var(--skin-color);
+  transform: rotate(23deg);
+  clip-path: ellipse(50% 60% at 50% 25%);
+}
+
+.head__nose-edge-two {
+  position: absolute;
+  top: -204px;
+  left: -391px;
+  width: 54px;
+  height: 70px;
+  background-color: var(--border-color);
+  transform: rotate(9deg);
+  clip-path: ellipse(50% 50% at 50% 4%);
+}
+
+.head__nose-edge-three {
+  position: absolute;
+  top: -204.5px;
+  left: -437px;
+  width: 79px;
+  height: 74px;
+  background-color: var(--border-color);
+  transform: rotate(35deg);
+  clip-path: ellipse(50% 50% at 50% 0%);
+}
+
+.head__nose-center-two {
+  position: absolute;
+  top: -221px;
+  left: -414px;
+  width: 74px;
+  height: 60px;
+  background-color: var(--skin-color);
+  transform: rotate(29deg);
+  clip-path: ellipse(50% 71% at 50% 25%);
+}
+
+.head__nose-left {
+  position: absolute;
+  top: -179px;
+  left: -405px;
+  width: 3px;
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 6px;
+  transform: rotate(-40deg);
+}
+
+.head__nose-right {
+  position: absolute;
+  top: -178px;
+  left: -386px;
+  width: 3px;
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 6px;
+  transform: rotate(55deg);
+}
+
+.head__eye-edge-left {
+  position: absolute;
+  top: -254px;
+  left: -426px;
+  width: 18px;
+  height: 38px;
+  background-color: var(--border-color);
+  transform: rotate(-10deg);
+  clip-path: ellipse(26% 50% at 80% 68%);
+}
+
+.head__eye-sclera-left {
+  position: absolute;
+  top: -252.5px;
+  left: -428.5px;
+  width: 20px;
+  height: 40px;
+  background-color: var(--eye-sclera-color);
+  transform: rotate(-10deg);
+  clip-path: ellipse(16% 50% at 87% 68%);
+}
+
+.head__eye-pupil-left {
+  position: absolute;
+  top: -233px;
+  left: -412px;
+  width: 14px;
+  height: 25px;
+  background-color: var(--eye-pupil-color);
+  transform: rotate(170deg);
+  clip-path: ellipse(29% 54% at 87% 100%);
+}
+
+.head__eye-pupil-light-left {
+  position: absolute;
+  top: -238px;
+  left: -414px;
+  width: 4px;
+  height: 7px;
+  background-color: var(--eye-sclera-color);
+  transform: rotate(9deg);
+  clip-path: ellipse(33% 50% at 50% 50%);
+}
+
+.head__eye-iris-left {
+  position: absolute;
+  top: -250px;
+  left: -430.5px;
+  width: 22px;
+  height: 30px;
+  background-color: var(--eye-iris-color);
+  transform: rotate(-10deg);
+  clip-path: ellipse(20% 33% at 91% 66%);
+}
+
+.head__eye-edge-right {
+  position: absolute;
+  top: -259px;
+  left: -358px;
+  width: 27px;
+  height: 42px;
+  background-color: var(--border-color);
+  transform: rotate(-3deg);
+  clip-path: ellipse(44% 50% at 48% 70%);
+}
+
+.head__eye-sclera-right {
+  position: absolute;
+  top: -257px;
+  left: -356.5px;
+  width: 24px;
+  height: 39px;
+  background-color: var(--eye-sclera-color);
+  transform: rotate(-3deg);
+  clip-path: ellipse(44% 50% at 48% 70%);
+}
+
+.head__eye-pupil-right {
+  position: absolute;
+  top: -253px;
+  left: -350px;
+  width: 15px;
+  height: 35px;
+  background-color: var(--eye-pupil-color);
+  transform: rotate(177deg);
+  clip-path: ellipse(50% 28% at 50% 18%);
+}
+
+.head__eye-iris-right {
+  position: absolute;
+  top: -241px;
+  left: -355.5px;
+  width: 26px;
+  height: 18px;
+  background-color: var(--eye-iris-color);
+  transform: rotate(-3deg);
+  clip-path: ellipse(18% 50% at 50% 50%);
+}
+
+.head__eye-pupil-light-right {
+  position: absolute;
+  top: -244px;
+  left: -353px;
+  width: 13px;
+  height: 10px;
+  background-color: var(--eye-sclera-color);
+  transform: rotate(22deg);
+  clip-path: ellipse(20% 50% at 50% 50%);
+}
+
+.head__eye-pupil-dark-right {
+  position: absolute;
+  top: -250px;
+  left: -353.5px;
+  width: 22px;
+  height: 33px;
+  background-color: var(--eye-iris-color);
+  transform: rotate(-3deg);
+  clip-path: ellipse(44% 50% at 48% 62%);
+}
+
+/*-- end head --*/
+
+/*-- body --*/
+.body {
+  position: absolute;
+  top: 102px;
+  left: 226px;
+}
+
+.body__skin-edge,
+.body__chest-edge {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+}
+
+.body__skin {
+  width: 400px;
+  height: 500px;
+  background-color: var(--skin-color);
+  clip-path: polygon(
+    10% 6%,
+    10% 14%,
+    10.2% 15%,
+    10.4% 21%,
+    10.2% 23%,
+    10% 21%,
+    9.8% 27%,
+    9.6% 29%,
+    9.4% 31%,
+    9.2% 33%,
+    9.2% 35%,
+    9.1% 37%,
+    9% 39%,
+    9% 41%,
+    9.2% 47%,
+    9.4% 49%,
+    9.6% 51%,
+    9.8% 53%,
+    10.2% 54%,
+    11.2% 57%,
+    12.6% 59%,
+    14.4% 61%,
+    41% 76%,
+    44% 75.8%,
+    46% 75.4%,
+    49% 74.6%,
+    53% 73%,
+    59% 70%,
+    66% 66%,
+    70% 63%,
+    72% 61.4%,
+    74% 59%,
+    76% 56%,
+    78% 52%,
+    79% 50%,
+    79.6% 48%,
+    80% 46%,
+    80.3% 43.5%,
+    80% 43%,
+    79% 43.2%,
+    74.8% 48%,
+    71% 51%,
+    65% 54.6%,
+    60% 56.9%,
+    54% 59%,
+    50% 59.9%,
+    49% 60%,
+    42% 60.2%,
+    35% 60%,
+    24.5% 25%,
+    21% 20%,
+    19.4% 17%,
+    17.6% 12%,
+    15.6% 6%,
+    14% 0%
+  );
+}
+
+.body__chest-one {
+  position: relative;
+  top: -433px;
+  left: -13px;
+  width: 116px;
+  height: 56px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    0% 46%,
+    5% 46%,
+    10% 45%,
+    15% 43%,
+    21% 39%,
+    32% 27%,
+    37% 19%,
+    43% 6%,
+    44% 3%,
+    45% 38%,
+    37% 46%,
+    32% 51%,
+    25% 54%,
+    17% 56%,
+    11% 57%,
+    0% 55%
+  );
+}
+
+.body__chest-one {
+  position: relative;
+  top: -433px;
+  left: -13px;
+  width: 116px;
+  height: 56px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    0% 46%,
+    5% 46%,
+    10% 45%,
+    15% 43%,
+    21% 39%,
+    32% 27%,
+    37% 19%,
+    43% 6%,
+    44% 3%,
+    45% 38%,
+    37% 46%,
+    32% 51%,
+    25% 54%,
+    17% 56%,
+    11% 57%,
+    0% 55%
+  );
+}
+
+.body__chest-two {
+  position: relative;
+  top: -482px;
+  left: -14px;
+  width: 116px;
+  height: 56px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    1% 48%,
+    2% 48%,
+    11% 49%,
+    15% 49%,
+    23% 47%,
+    33% 43%,
+    37% 40%,
+    43% 34%,
+    46% 31%,
+    46% 57%,
+    37% 63%,
+    32% 65%,
+    25% 67%,
+    17% 68%,
+    11% 68%,
+    0% 64%
+  );
+}
+
+.body__chest-three {
+  position: relative;
+  top: -522px;
+  left: -23px;
+  width: 116px;
+  height: 60px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    7.5% 37%,
+    11% 38%,
+    14% 39%,
+    17% 40%,
+    25% 41%,
+    33% 40%,
+    37% 39%,
+    45% 36%,
+    54% 31%,
+    52% 61%,
+    44% 64%,
+    32% 67%,
+    25% 68%,
+    18% 69%,
+    10% 67%,
+    1.5% 62%
+  );
+}
+
+.body__chest-four {
+  position: relative;
+  top: -562px;
+  left: -36px;
+  width: 116px;
+  height: 60px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    12% 33%,
+    15% 35%,
+    18% 37%,
+    22% 39%,
+    29% 40%,
+    33% 40%,
+    37% 39%,
+    45% 38%,
+    63% 33%,
+    61% 77%,
+    49% 74%,
+    34% 73%,
+    26% 73%,
+    17% 73%,
+    10% 73%,
+    1% 74%
+  );
+}
+
+.body__chest-five {
+  position: relative;
+  top: -595px;
+  left: -56px;
+  width: 116px;
+  height: 60px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    17% 35%,
+    20% 35%,
+    25% 34%,
+    31% 33%,
+    38% 33%,
+    46% 33%,
+    57% 34%,
+    69% 35%,
+    78% 37%,
+    78% 89%,
+    49% 81%,
+    34% 79%,
+    26% 78%,
+    17% 78%,
+    10% 78%,
+    2% 79%
+  );
+}
+
+.body__chest-six {
+  position: relative;
+  top: -626px;
+  left: -75px;
+  width: 116px;
+  height: 60px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    18% 35%,
+    22% 35%,
+    30% 34%,
+    37% 34%,
+    45% 35%,
+    53% 36%,
+    63% 38%,
+    75% 41%,
+    94.4% 46%,
+    94% 95%,
+    72% 86%,
+    52% 81%,
+    30% 78%,
+    17% 77%,
+    10% 78%,
+    5% 80%
+  );
+}
+
+.body__chest-seven {
+  position: relative;
+  top: -657px;
+  left: -92px;
+  width: 137px;
+  height: 64px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    15% 36%,
+    24% 33%,
+    35% 34%,
+    44% 35%,
+    51% 36%,
+    61% 38%,
+    72% 40%,
+    83% 45%,
+    92% 49%,
+    94% 100%,
+    77% 95%,
+    46% 90%,
+    23% 92%,
+    13% 93%,
+    6% 95%,
+    7% 81%
+  );
+}
+
+.body__chest-eight {
+  position: relative;
+  top: -686px;
+  left: -92px;
+  width: 139px;
+  height: 70px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    6% 41%,
+    16% 39%,
+    40% 37%,
+    55% 38%,
+    71% 41%,
+    79% 43%,
+    92.5% 47%,
+    94% 65%,
+    98% 87%,
+    86% 93%,
+    73% 96%,
+    50% 97%,
+    22% 93%,
+    7% 88%,
+    6% 80%,
+    5% 60%
+  );
+}
+
+.body__chest-nine {
+  position: relative;
+  top: -716px;
+  left: -92px;
+  width: 150px;
+  height: 70px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    7% 35%,
+    19% 39%,
+    40% 42%,
+    55% 44%,
+    71% 43%,
+    86% 38%,
+    92% 34%,
+    97.5% 51%,
+    96% 60%,
+    94.5% 75%,
+    81% 86%,
+    60% 94%,
+    36% 90%,
+    22% 80%,
+    12% 69%,
+    9% 54%
+  );
+}
+
+.body__chest-ten {
+  position: relative;
+  top: -756px;
+  left: -87px;
+  width: 150px;
+  height: 70px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    9% 31%,
+    17% 40%,
+    33% 52%,
+    57% 56%,
+    78% 48%,
+    91% 37%,
+    91% 51%,
+    91% 60%,
+    92% 70%,
+    79% 84%,
+    62% 91%,
+    47% 88%,
+    31% 79%,
+    18% 65%,
+    12% 46%
+  );
+}
+
+.body__chest-eleven {
+  position: relative;
+  top: -799px;
+  left: -73px;
+  width: 150px;
+  height: 70px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    9.5% 32%,
+    21% 46%,
+    37% 55%,
+    53% 58%,
+    71% 50%,
+    83% 37%,
+    85% 49%,
+    88% 60%,
+    91% 69%,
+    79% 84%,
+    62% 91%,
+    47% 87%,
+    33% 79%,
+    19% 55%
+  );
+}
+
+.body__chest-twelve {
+  position: relative;
+  top: -846px;
+  left: -60px;
+  width: 150px;
+  height: 70px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    27% 51%,
+    38% 58%,
+    53% 62%,
+    71% 55%,
+    84% 39%,
+    88% 50%,
+    92% 57%,
+    83% 70%,
+    74% 76%,
+    56% 81%,
+    46% 72%,
+    41% 68%
+  );
+}
+
+.body__chest-thirteen {
+  position: relative;
+  top: -902px;
+  left: -42px;
+  width: 150px;
+  height: 70px;
+  background-color: var(--chest-color);
+  clip-path: polygon(
+    46% 64%,
+    63% 60%,
+    73% 53%,
+    82% 40%,
+    88% 49%,
+    91% 53%,
+    85% 65%,
+    73% 75%,
+    60% 72%
+  );
+}
+
+.body__chest-fourteen {
+  position: relative;
+  top: -962px;
+  left: -18px;
+  width: 150px;
+  height: 70px;
+  background-color: var(--chest-color);
+  clip-path: polygon(60% 62%, 70% 55%, 77% 42%, 79% 46%, 82% 58%, 73% 62%);
+}
+
+.body__chest-fifteen {
+  position: relative;
+  top: -1053px;
+  left: 49px;
+  width: 150px;
+  height: 71px;
+  background-color: var(--chest-color);
+  clip-path: polygon(69% 72%, 75% 53%, 77% 42%, 82% 41%, 76% 60%, 68% 79%);
+}
+
+.body__chest-sixteen {
+  position: relative;
+  top: -1125px;
+  left: 60px;
+  width: 150px;
+  height: 71px;
+  background-color: var(--chest-color);
+  clip-path: polygon(63% 80%, 70% 65%, 77% 42%, 86% 37%, 81% 54%, 75% 70%);
+}
+
+.body__chest-seventeen {
+  position: relative;
+  top: -1200px;
+  left: 77px;
+  width: 150px;
+  height: 71px;
+  background-color: var(--chest-color);
+  clip-path: polygon(66% 74%, 73% 55%, 77% 41%, 86% 33%, 85% 44%, 81% 58%);
+}
+
+.body__chest-eighteen {
+  position: relative;
+  top: -1278px;
+  left: 93px;
+  width: 150px;
+  height: 71px;
+  background-color: var(--chest-color);
+  clip-path: polygon(73% 66%, 76% 56%, 77% 41%, 86% 30%, 85% 39%, 83% 51%);
+}
+
+.body__chest-nineteen {
+  position: relative;
+  top: -1358px;
+  left: 109px;
+  width: 150px;
+  height: 71px;
+  background-color: var(--chest-color);
+  clip-path: polygon(75% 61%, 76% 53%, 78% 40%, 85% 30%, 85% 35%, 81% 51%);
+}
+
+.body__chest-twenty {
+  position: relative;
+  top: -1438px;
+  left: 123px;
+  width: 150px;
+  height: 71px;
+  background-color: var(--chest-color);
+  clip-path: polygon(75% 59%, 78% 47%, 78% 40%, 85% 29%, 84% 36%, 79% 52%);
+}
+
+.body__chest-twenty-one {
+  position: relative;
+  top: -1519px;
+  left: 136px;
+  width: 150px;
+  height: 71px;
+  background-color: var(--chest-color);
+  clip-path: polygon(75% 59%, 78% 46%, 78% 40%, 85% 29%, 84% 38%, 79% 51%);
+}
+
+.body__chest-twenty-two {
+  position: relative;
+  top: -1599px;
+  left: 149px;
+  width: 150px;
+  height: 71px;
+  background-color: var(--chest-color);
+  clip-path: polygon(76% 52%, 78% 46%, 78% 40%, 83% 30%, 82% 34%);
+}
+
+.body__chest-twenty-three {
+  position: relative;
+  top: -1680px;
+  left: 159px;
+  width: 150px;
+  height: 71px;
+  background-color: var(--chest-color);
+  clip-path: polygon(75% 54%, 77% 47%, 78% 41%, 85% 26%);
+}
+
+/*-- end body --*/
+
+/*-- arm --*/
+
+.arm__left-edge {
+  position: relative;
+  filter: drop-shadow(1px 0px 0px var(--border-color))
+    drop-shadow(1px 0px 0px var(--border-color))
+    drop-shadow(0px 1px 0px var(--border-color))
+    drop-shadow(0px 1px 0px var(--border-color));
+  z-index: 20;
+}
+
+.arm__right-edge {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+}
+
+.arm__left {
+  position: relative;
+  top: -400px;
+  left: 284px;
+  width: 260px;
+  height: 155px;
+  background-color: var(--skin-color);
+  clip-path: polygon(
+    1% 27%,
+    14.7% 0%,
+    25% 24%,
+    37% 53%,
+    42% 71%,
+    43% 78%,
+    43% 84%,
+    41% 91%,
+    39% 95%,
+    37% 97%,
+    32% 100%,
+    29% 98%,
+    25% 93%,
+    20% 81%,
+    14% 62%,
+    5% 39%,
+    2% 31%
+  );
+}
+
+.arm__nail-edge-left-one {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+  z-index: 10;
+}
+
+.arm__nail-edge-left-two {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+  z-index: 30;
+}
+
+.arm__nail-left-one {
+  position: relative;
+  top: -423px;
+  left: 387px;
+  width: 54px;
+  height: 64px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(3% 23%, 17% 2%, 21% 16%, 21% 27%, 20% 33%, 12% 29%);
+}
+
+.arm__nail-left-two {
+  position: relative;
+  top: -477px;
+  left: 366px;
+  width: 80px;
+  height: 72px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(2% 18%, 6% 10%, 13% 6%, 21% 7%, 20% 33%, 15% 29%);
+}
+
+.arm__nail-left-three {
+  position: relative;
+  top: -560px;
+  left: 347px;
+  width: 63px;
+  height: 64px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(3% 23%, 12% 26%, 20% 33%, 9% 44%, 4% 46%);
+}
+
+.arm__right {
+  position: relative;
+  top: -772px;
+  left: -61px;
+  width: 280px;
+  height: 155px;
+  background-color: var(--skin-color);
+  transform: rotate(160deg);
+  clip-path: polygon(
+    6% 62%,
+    1% 60%,
+    0% 60%,
+    3% 54%,
+    9% 45%,
+    16% 35%,
+    19% 36%,
+    25% 39%,
+    32% 46%,
+    38% 57%,
+    41% 67%,
+    42% 73%,
+    42% 78%,
+    42% 84%,
+    41% 91%,
+    39% 95%,
+    37% 97%,
+    32% 100%,
+    29% 98%,
+    25% 93%,
+    20% 81%,
+    15% 70%,
+    13% 67%,
+    11% 65%
+  );
+}
+
+.arm__nail-edge-right {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+}
+
+.arm__nail-right-one {
+  position: relative;
+  top: -945px;
+  left: 115px;
+  width: 54px;
+  height: 64px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(2% 20%, 11% 12%, 24% 7%, 24% 19%, 23% 31%, 12% 28%);
+}
+
+.arm__nail-right-two {
+  position: relative;
+  top: -1047px;
+  left: 43px;
+  width: 64px;
+  height: 58px;
+  background-color: var(--eye-sclera-color);
+  transform: rotate(177deg);
+  clip-path: polygon(2% 18%, 6% 10%, 13% 6%, 21% 7%, 20% 33%, 15% 29%);
+}
+
+.arm__nail-right-three {
+  position: relative;
+  top: -1052px;
+  left: 40px;
+  width: 63px;
+  height: 64px;
+  background-color: var(--eye-sclera-color);
+  transform: rotate(87deg);
+  clip-path: polygon(6% 25%, 13% 26%, 22% 31%, 13% 39%, 2% 47%);
+}
+
+/*-- end arm --*/
+
+/*-- leg --*/
+
+.leg__left-edge,
+.leg__right-edge {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+}
+
+.leg__left {
+  position: relative;
+  top: -965px;
+  left: 271px;
+  width: 321px;
+  height: 258px;
+  background-color: var(--skin-color);
+  clip-path: polygon(
+    4% 20%,
+    6% 15%,
+    9% 9%,
+    12% 5%,
+    16% 1%,
+    19% 0%,
+    22% 1%,
+    26% 4%,
+    29% 7%,
+    32% 11%,
+    35% 19%,
+    37% 25%,
+    38% 30%,
+    38.4% 36%,
+    38.6% 38%,
+    38.4% 42%,
+    38% 45%,
+    37% 49%,
+    35.5% 53%,
+    33.9% 56%,
+    32% 60%,
+    32% 65%,
+    34% 71%,
+    37% 76%,
+    39.5% 82%,
+    41% 87%,
+    41.5% 89%,
+    40% 94%,
+    32% 96%,
+    29% 96%,
+    17% 90%,
+    15% 86%,
+    15% 82%,
+    17.5% 75%,
+    19% 68%,
+    19% 62%,
+    18% 59%,
+    15% 56%,
+    11% 53%,
+    7% 47.8%,
+    4% 42%,
+    2.5% 36%,
+    2% 29%
+  );
+}
+
+.leg__nail-edge-left {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+}
+
+.leg__nail-left-one {
+  position: absolute;
+  top: -999px;
+  left: 387px;
+  width: 80px;
+  height: 94px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(
+    0% 11%,
+    5% 4%,
+    11% 2%,
+    17% 6%,
+    21% 10%,
+    20% 24%,
+    16% 34%,
+    7% 27%,
+    1% 20%
+  );
+}
+
+.leg__nail-left-two {
+  position: absolute;
+  top: -999px;
+  left: 356px;
+  width: 125px;
+  height: 116px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(
+    2% 11%,
+    5% 6%,
+    11% 2%,
+    16% 4%,
+    20% 11%,
+    19% 23%,
+    18% 34%,
+    8% 27%,
+    1% 17%
+  );
+}
+
+.leg__nail-left-three {
+  position: absolute;
+  top: -1002px;
+  left: 326px;
+  width: 125px;
+  height: 116px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(
+    2% 11%,
+    5% 6%,
+    12% 4%,
+    17% 7%,
+    20% 14%,
+    20% 23%,
+    19% 28%,
+    13% 24%,
+    6% 18%
+  );
+}
+
+.leg__right {
+  position: relative;
+  top: -1220px;
+  left: 97px;
+  width: 321px;
+  height: 258px;
+  background-color: var(--skin-color);
+  clip-path: polygon(
+    13.5% 0%,
+    13% 6%,
+    14% 15%,
+    16.5% 25%,
+    21% 36%,
+    25.5% 43%,
+    31.5% 49%,
+    40% 55.5%,
+    36% 62%,
+    32% 67%,
+    28% 71%,
+    24% 74%,
+    21% 75.5%,
+    16% 77%,
+    13% 76%,
+    3% 65%,
+    6% 63%,
+    12% 60%,
+    18% 59%,
+    23% 55%,
+    16% 50%,
+    11% 44%,
+    8% 39%,
+    5% 32%,
+    4.5% 25%,
+    5.5% 19%,
+    6.5% 14%,
+    10% 6%
+  );
+}
+
+.leg__nail-edge-right-one,
+.leg__nail-edge-right-two,
+.leg__nail-edge-right-three {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+}
+
+.leg__nail-right-one {
+  position: absolute;
+  top: -1309px;
+  left: 89px;
+  width: 80px;
+  height: 94px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(11% 5%, 23% 0%, 27% 1%, 28% 5%, 9% 15%, 0% 13%);
+}
+
+.leg__nail-right-two {
+  position: absolute;
+  top: -1309px;
+  left: 91px;
+  width: 184px;
+  height: 75px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(
+    3% 26%,
+    7% 16%,
+    13% 8%,
+    17% 9%,
+    20% 15%,
+    20% 19%,
+    17% 26%,
+    9% 31%,
+    2% 30%
+  );
+}
+
+.leg__nail-right-three {
+  position: absolute;
+  top: -1300px;
+  left: 111px;
+  width: 156px;
+  height: 88px;
+  background-color: var(--eye-sclera-color);
+  clip-path: polygon(
+    2% 23%,
+    7% 14%,
+    12% 8%,
+    15% 8%,
+    19% 14%,
+    20% 23%,
+    16% 24%,
+    8% 24%,
+    4% 24%
+  );
+}
+
+/*--end leg --*/
