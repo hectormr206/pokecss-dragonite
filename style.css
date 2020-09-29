@@ -427,6 +427,192 @@ body {
 
 /*-- end head --*/
 
+/*-- wings --*/
+.wings__left-edge {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+}
+
+.wings__left-external {
+  position: absolute;
+  top: -521px;
+  left: 316px;
+  width: 187px;
+  height: 187px;
+  background-color: var(--skin-color);
+  clip-path: polygon(
+    3% 62%,
+    9% 58%,
+    16% 52%,
+    23% 44%,
+    34% 25%,
+    38% 11%,
+    38% 3%,
+    40% 1%,
+    42% 1%,
+    49% 5%,
+    58% 12%,
+    69% 24%,
+    79% 37%,
+    87% 52%,
+    91% 65%,
+    92% 78%,
+    91% 88%,
+    89% 97%,
+    88% 97%,
+    89% 91%,
+    90% 78%,
+    89% 65%,
+    85% 52%,
+    78% 38%,
+    67% 24%,
+    57% 13%,
+    47% 7%,
+    43% 8%,
+    41% 12%,
+    39% 21%,
+    36% 28%,
+    24% 45%,
+    17% 53%,
+    2% 64%
+  );
+}
+
+.wings__left-internal-one {
+  position: absolute;
+  top: -521px;
+  left: 316px;
+  width: 187px;
+  height: 187px;
+  background-color: var(--internal-wing-color);
+  clip-path: polygon(
+    41% 18%,
+    40% 22%,
+    37% 29%,
+    25% 46%,
+    18% 54%,
+    2% 66%,
+    12% 77%,
+    15% 75%,
+    18% 74%,
+    24% 73%,
+    30% 74%,
+    38% 76%,
+    43% 79%,
+    48% 83%,
+    48% 81%,
+    49% 68%,
+    49% 53%,
+    48% 35%,
+    46% 20%,
+    43% 10%
+  );
+}
+
+.wings__left-internal-two {
+  position: absolute;
+  top: -521px;
+  left: 316px;
+  width: 187px;
+  height: 187px;
+  background-color: var(--internal-wing-color);
+  clip-path: polygon(
+    45% 9%,
+    49% 51%,
+    50% 70%,
+    49% 82%,
+    63% 70%,
+    71% 67%,
+    74% 67%,
+    77% 68%,
+    84% 73%,
+    88% 78%,
+    89% 79%,
+    88% 66%,
+    84% 53%,
+    77% 39%,
+    65% 24%,
+    57% 15%,
+    47% 9%
+  );
+}
+
+.wings__right-edge {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+}
+
+.wings__right-external {
+  position: absolute;
+  top: -454px;
+  left: 152px;
+  width: 74px;
+  height: 75px;
+  background-color: var(--skin-color);
+  clip-path: polygon(
+    4% 62%,
+    4% 67%,
+    13% 44%,
+    20% 31%,
+    26% 22%,
+    34% 11%,
+    30% 3%,
+    23% 15%,
+    16% 27%,
+    11% 39%,
+    7% 50%
+  );
+}
+
+.wings__right-internal-one {
+  position: absolute;
+  top: -445px;
+  left: 152px;
+  width: 139px;
+  height: 65px;
+  background-color: var(--internal-wing-color-shadow);
+  clip-path: polygon(
+    4% 62%,
+    32% 96%,
+    29% 56%,
+    30% 41%,
+    31% 30%,
+    32% 21%,
+    19% 3%,
+    15% 15%,
+    11% 27%,
+    8% 39%,
+    6% 50%
+  );
+}
+
+.wings__right-internal-two {
+  position: absolute;
+  top: -442px;
+  left: 192px;
+  width: 139px;
+  height: 65px;
+  background-color: var(--internal-wing-color-shadow);
+  clip-path: polygon(
+    2% 64%,
+    1% 50%,
+    1% 33%,
+    4% 17%,
+    8% 20%,
+    13% 20%,
+    14% 25%,
+    12% 55%
+  );
+}
+
+/*-- end wings --*/
+
 /*-- body --*/
 .body {
   position: absolute;
