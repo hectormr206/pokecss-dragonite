@@ -22,6 +22,7 @@ body {
   width: 620px;
   min-width: 620px;
   height: 620px;
+  opacity: 0.26;
 }
 
 .container {
@@ -36,6 +37,7 @@ body {
   position: absolute;
   top: 0px;
   left: 87px;
+  z-index: 60;
 }
 
 .head__antenna-edge-left,
@@ -163,266 +165,272 @@ body {
   );
 }
 
+.head__skull-edge {
+  position: relative;
+  filter: drop-shadow(2px 0px 0px var(--border-color))
+    drop-shadow(-2px 0px 0px var(--border-color))
+    drop-shadow(0px 2px 0px var(--border-color))
+    drop-shadow(0px -2px 0px var(--border-color));
+}
+
 .head__skull {
-  position: absolute;
-  top: 56px;
-  left: 86px;
-  width: 109px;
-  height: 100px;
+  position: relative;
+  top: -145px;
+  left: 87px;
+  width: 110px;
+  height: 155px;
   background-color: var(--skin-color);
-  clip-path: ellipse(50% 50% at 50% 50%);
-  z-index: 1;
-  opacity: 0;
+  clip-path: polygon(
+    30% 14%,
+    24% 16%,
+    20% 18%,
+    15% 21%,
+    11% 25%,
+    8% 29%,
+    5% 33%,
+    2% 38%,
+    1% 43%,
+    1% 47%,
+    2% 52%,
+    5% 58%,
+    6% 62%,
+    7% 65%,
+    6% 69%,
+    3% 73%,
+    1% 77%,
+    1% 79%,
+    1% 82%,
+    3% 87%,
+    6% 90%,
+    12% 94.5%,
+    19% 97.5%,
+    27% 99.5%,
+    36% 100%,
+    50% 99%,
+    58% 97%,
+    71% 91%,
+    82% 83%,
+    85% 80%,
+    87% 75%,
+    87% 72%,
+    100% 46%,
+    97% 39%,
+    92% 32%,
+    86% 26%,
+    80% 21%,
+    73% 17%,
+    67% 14%,
+    58% 12%,
+    51% 12%,
+    38% -1%
+  );
 }
 
-.head__skull-edge-one {
-  position: absolute;
-  top: -300px;
-  left: -416px;
-  width: 112px;
-  height: 126px;
-  background-color: var(--border-color);
-  clip-path: ellipse(50% 50% at 50% 50%);
-}
-
-.head__skull-edge-two {
-  position: absolute;
-  top: -300px;
-  left: -416px;
-  width: 108px;
-  height: 115px;
-  background-color: var(--border-color);
-  clip-path: ellipse(50% 50% at 50% 50%);
-}
-
-.head__skull-edge-three {
-  position: absolute;
-  top: -205px;
-  left: -347px;
-  width: 14px;
-  height: 45px;
-  background-color: var(--border-color);
-  transform: rotate(50deg);
-  clip-path: ellipse(50% 50% at 50% 58%);
-}
-
-.head__skull-one {
-  position: absolute;
-  top: -298px;
-  left: -415px;
-  width: 106px;
-  height: 109px;
+.head__skull-hide {
+  position: relative;
+  top: -229px;
+  left: 181px;
+  width: 18px;
+  height: 42px;
   background-color: var(--skin-color);
-  clip-path: ellipse(50% 50% at 50% 50%);
+  clip-path: polygon(87% -4%, -7% 98%, 30% 100%, 102% 30%);
 }
 
-.head__skull-two {
-  position: absolute;
-  top: -206px;
-  left: -348px;
-  width: 16px;
-  height: 38px;
-  background-color: var(--skin-color);
-  transform: rotate(48deg);
-  clip-path: ellipse(50% 50% at 50% 50%);
-}
-
-.head__nose-edge-one {
-  position: absolute;
-  top: -214px;
-  left: -428px;
-  width: 75px;
-  height: 70px;
+.head__skull-border-one {
+  position: relative;
+  top: -230px;
+  left: 163px;
+  width: 12px;
+  height: 31px;
   background-color: var(--border-color);
-  transform: rotate(23deg);
-  clip-path: ellipse(50% 50% at 50% 25%);
+  clip-path: polygon(
+    36% 80%,
+    0% 100%,
+    38% 89%,
+    66% 71%,
+    81% 55%,
+    92% 43%,
+    94% 18%,
+    66% -60%,
+    77% 18%,
+    76% 43%,
+    52% 70%
+  );
 }
 
-.head__nose-center-one {
-  position: absolute;
-  top: -214px;
-  left: -424px;
-  width: 74px;
-  height: 60px;
-  background-color: var(--skin-color);
-  transform: rotate(23deg);
-  clip-path: ellipse(50% 60% at 50% 25%);
-}
-
-.head__nose-edge-two {
-  position: absolute;
-  top: -204px;
-  left: -391px;
-  width: 54px;
-  height: 70px;
+.head__skull-border-two {
+  position: relative;
+  top: -357px;
+  left: 133px;
+  width: 12px;
+  height: 9px;
   background-color: var(--border-color);
-  transform: rotate(9deg);
-  clip-path: ellipse(50% 50% at 50% 4%);
+  clip-path: polygon(16% 60%, 10% 80%, 47% 64%, 99% 29%, 85% 17%, 43% 46%);
 }
 
-.head__nose-edge-three {
-  position: absolute;
-  top: -204.5px;
-  left: -437px;
-  width: 79px;
-  height: 74px;
+.head__skull-border-three {
+  position: relative;
+  top: -367px;
+  left: 117px;
+  width: 12px;
+  height: 9px;
   background-color: var(--border-color);
-  transform: rotate(35deg);
-  clip-path: ellipse(50% 50% at 50% 0%);
+  clip-path: polygon(17% 60%, 10% 80%, 42% 105%, 99% 100%, 89% 84%, 46% 81%);
 }
 
-.head__nose-center-two {
+.head__skull-border-four {
   position: absolute;
-  top: -221px;
-  left: -414px;
-  width: 74px;
-  height: 60px;
-  background-color: var(--skin-color);
-  transform: rotate(29deg);
-  clip-path: ellipse(50% 71% at 50% 25%);
+  top: 139.5px;
+  left: 90px;
+  width: 9.5px;
+  height: 3px;
+  background-color: var(--border-color);
+  border-radius: 5px;
+  transform: rotate(-55deg);
+  z-index: 10;
 }
 
 .head__nose-left {
-  position: absolute;
-  top: -179px;
-  left: -405px;
-  width: 3px;
-  height: 8px;
+  position: relative;
+  top: -248px;
+  left: 103px;
+  width: 9px;
+  height: 3px;
   background-color: var(--border-color);
-  border-radius: 6px;
-  transform: rotate(-40deg);
+  transform: rotate(38deg);
+  clip-path: ellipse(50% 40% at 50% 50%);
 }
 
 .head__nose-right {
-  position: absolute;
-  top: -178px;
-  left: -386px;
-  width: 3px;
-  height: 8px;
+  position: relative;
+  top: -252px;
+  left: 121px;
+  width: 9px;
+  height: 3px;
   background-color: var(--border-color);
-  border-radius: 6px;
-  transform: rotate(55deg);
+  transform: rotate(-42deg);
+  clip-path: ellipse(50% 40% at 50% 50%);
 }
 
 .head__eye-edge-left {
-  position: absolute;
-  top: -254px;
-  left: -426px;
-  width: 18px;
+  position: relative;
+  top: -332px;
+  left: 80px;
+  width: 13px;
   height: 38px;
   background-color: var(--border-color);
-  transform: rotate(-10deg);
-  clip-path: ellipse(26% 50% at 80% 68%);
+  transform: rotate(-17deg);
+  clip-path: ellipse(29% 50% at 84% 75%);
 }
 
 .head__eye-sclera-left {
-  position: absolute;
-  top: -252.5px;
-  left: -428.5px;
-  width: 20px;
-  height: 40px;
+  position: relative;
+  top: -359px;
+  left: 83px;
+  width: 8px;
+  height: 9px;
   background-color: var(--eye-sclera-color);
-  transform: rotate(-10deg);
-  clip-path: ellipse(16% 50% at 87% 68%);
+  transform: rotate(-17deg);
+  clip-path: ellipse(12% 50% at 86% 78%);
 }
 
 .head__eye-pupil-left {
-  position: absolute;
-  top: -233px;
-  left: -412px;
-  width: 14px;
-  height: 25px;
+  position: relative;
+  top: -351px;
+  left: 94px;
+  width: 5px;
+  height: 11px;
   background-color: var(--eye-pupil-color);
   transform: rotate(170deg);
   clip-path: ellipse(29% 54% at 87% 100%);
 }
 
+.head__eye-iris-left {
+  position: relative;
+  top: -381px;
+  left: 78px;
+  width: 15px;
+  height: 25px;
+  background-color: var(--eye-iris-color);
+  transform: rotate(-16deg);
+  clip-path: ellipse(20% 33% at 91% 66%);
+}
+
 .head__eye-pupil-light-left {
-  position: absolute;
-  top: -238px;
-  left: -414px;
-  width: 4px;
-  height: 7px;
+  position: relative;
+  top: -397px;
+  left: 89px;
+  width: 3px;
+  height: 6px;
   background-color: var(--eye-sclera-color);
   transform: rotate(9deg);
   clip-path: ellipse(33% 50% at 50% 50%);
 }
 
-.head__eye-iris-left {
-  position: absolute;
-  top: -250px;
-  left: -430.5px;
-  width: 22px;
-  height: 30px;
-  background-color: var(--eye-iris-color);
-  transform: rotate(-10deg);
-  clip-path: ellipse(20% 33% at 91% 66%);
-}
-
 .head__eye-edge-right {
-  position: absolute;
-  top: -259px;
-  left: -358px;
-  width: 27px;
-  height: 42px;
+  position: relative;
+  top: -434px;
+  left: 143px;
+  width: 28px;
+  height: 45px;
   background-color: var(--border-color);
-  transform: rotate(-3deg);
-  clip-path: ellipse(44% 50% at 48% 70%);
+  transform: rotate(-11deg);
+  clip-path: ellipse(44% 50% at 50% 70%);
 }
 
 .head__eye-sclera-right {
-  position: absolute;
-  top: -257px;
-  left: -356.5px;
+  position: relative;
+  top: -475.5px;
+  left: 145.6px;
   width: 24px;
   height: 39px;
   background-color: var(--eye-sclera-color);
-  transform: rotate(-3deg);
+  transform: rotate(-11deg);
   clip-path: ellipse(44% 50% at 48% 70%);
 }
 
+.head__eye-pupil-dark-right {
+  position: relative;
+  top: -509px;
+  left: 152px;
+  width: 19px;
+  height: 34px;
+  background-color: var(--eye-iris-color);
+  transform: rotate(-11deg);
+  clip-path: ellipse(44% 50% at 48% 62%);
+}
+
 .head__eye-pupil-right {
-  position: absolute;
-  top: -253px;
-  left: -350px;
-  width: 15px;
-  height: 35px;
+  position: relative;
+  top: -546px;
+  left: 155px;
+  width: 12px;
+  height: 36px;
   background-color: var(--eye-pupil-color);
-  transform: rotate(177deg);
+  transform: rotate(169deg);
   clip-path: ellipse(50% 28% at 50% 18%);
 }
 
 .head__eye-iris-right {
-  position: absolute;
-  top: -241px;
-  left: -355.5px;
+  position: relative;
+  top: -566px;
+  left: 149px;
   width: 26px;
   height: 18px;
   background-color: var(--eye-iris-color);
-  transform: rotate(-3deg);
+  transform: rotate(-11deg);
   clip-path: ellipse(18% 50% at 50% 50%);
 }
 
 .head__eye-pupil-light-right {
-  position: absolute;
-  top: -244px;
-  left: -353px;
+  position: relative;
+  top: -587px;
+  left: 151px;
   width: 13px;
   height: 10px;
   background-color: var(--eye-sclera-color);
-  transform: rotate(22deg);
+  transform: rotate(15deg);
   clip-path: ellipse(20% 50% at 50% 50%);
-}
-
-.head__eye-pupil-dark-right {
-  position: absolute;
-  top: -250px;
-  left: -353.5px;
-  width: 22px;
-  height: 33px;
-  background-color: var(--eye-iris-color);
-  transform: rotate(-3deg);
-  clip-path: ellipse(44% 50% at 48% 62%);
 }
 
 /*-- end head --*/
@@ -1160,21 +1168,14 @@ body {
 
 /*-- arm --*/
 
-.arm__left-edge {
-  position: relative;
-  filter: drop-shadow(1px 0px 0px var(--border-color))
-    drop-shadow(1px 0px 0px var(--border-color))
-    drop-shadow(0px 1px 0px var(--border-color))
-    drop-shadow(0px 1px 0px var(--border-color));
-  z-index: 20;
-}
-
+.arm__left-edge,
 .arm__right-edge {
   position: relative;
   filter: drop-shadow(2px 0px 0px var(--border-color))
     drop-shadow(-2px 0px 0px var(--border-color))
     drop-shadow(0px 2px 0px var(--border-color))
     drop-shadow(0px -2px 0px var(--border-color));
+  z-index: 20;
 }
 
 .arm__left {
@@ -1203,6 +1204,27 @@ body {
     5% 39%,
     2% 31%
   );
+}
+
+.arm__left-hiden {
+  position: absolute;
+  top: 219px;
+  left: 281px;
+  width: 42px;
+  height: 49px;
+  background-color: var(--skin-color);
+  clip-path: polygon(76% 0%, -15% 100%, 20% 100%, 100% 12%);
+  z-index: 30;
+}
+
+.arm__left-border {
+  position: absolute;
+  top: 271px;
+  left: 280px;
+  width: 14px;
+  height: 17px;
+  background-color: var(--border-color);
+  clip-path: polygon(43% 37%, 40% 50%, 103% 81%, 93% 65%);
 }
 
 .arm__nail-edge-left-one {
@@ -1295,6 +1317,7 @@ body {
     drop-shadow(-2px 0px 0px var(--border-color))
     drop-shadow(0px 2px 0px var(--border-color))
     drop-shadow(0px -2px 0px var(--border-color));
+  z-index: 30;
 }
 
 .arm__nail-right-one {
@@ -1437,9 +1460,9 @@ body {
     11% 2%,
     16% 4%,
     20% 11%,
-    19% 23%,
+    20% 23%,
     18% 34%,
-    8% 27%,
+    8% 26%,
     1% 17%
   );
 }
