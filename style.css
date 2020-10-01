@@ -7,27 +7,30 @@
 
 html,
 body {
-  /* position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   margin: 0;
   padding: 0;
-  /* width: 100vw;
-  height: 100vh; */
+  width: 100vw;
+  height: 100vh;
   background-color: var(--background);
 }
 
 .img {
+  display: none;
   width: 620px;
   min-width: 620px;
   height: 620px;
+  opacity: 0.2;
 }
 
 .container {
-  /* position: absolute;
+  position: absolute;
   width: 620px;
-  height: 620px; */
+  height: 620px;
+  overflow: hidden;
 }
 
 /*-- head --*/
@@ -435,6 +438,11 @@ body {
 /*-- end head --*/
 
 /*-- wings --*/
+.wings {
+  position: absolute;
+  top: 624px;
+}
+
 .wings__left-edge {
   position: relative;
   filter: drop-shadow(2px 0px 0px var(--border-color))
@@ -533,7 +541,7 @@ body {
 
 .wings__left-internal-one-shadow {
   position: absolute;
-  top: 103px;
+  top: -521px;
   left: 316px;
   width: 187px;
   height: 187px;
@@ -591,7 +599,7 @@ body {
 
 .wings__left-internal-two-shadow {
   position: absolute;
-  top: 102.5px;
+  top: -521px;
   left: 315.5px;
   width: 187px;
   height: 187px;
@@ -620,7 +628,7 @@ body {
 
 .wings__left-internal-three-shadow {
   position: absolute;
-  top: 104.5px;
+  top: -520px;
   left: 315.5px;
   width: 187px;
   height: 187px;
@@ -644,7 +652,7 @@ body {
 
 .wings__left-internal-four-shadow {
   position: absolute;
-  top: 102.5px;
+  top: -521px;
   left: 315.9px;
   width: 187px;
   height: 187px;
@@ -1277,6 +1285,11 @@ body {
 
 /*-- arm --*/
 
+.arm {
+  position: absolute;
+  top: 624px;
+}
+
 .arm__left-edge,
 .arm__right-edge {
   position: relative;
@@ -1317,7 +1330,7 @@ body {
 
 .arm__left-hiden {
   position: absolute;
-  top: 219px;
+  top: -406px;
   left: 281px;
   width: 42px;
   height: 49px;
@@ -1328,7 +1341,7 @@ body {
 
 .arm__left-border {
   position: absolute;
-  top: 271px;
+  top: -353px;
   left: 280px;
   width: 14px;
   height: 17px;
@@ -1465,6 +1478,11 @@ body {
 
 /*-- leg --*/
 
+.leg {
+  position: absolute;
+  top: 1319px;
+}
+
 .leg__left-edge,
 .leg__right-edge {
   position: relative;
@@ -1526,6 +1544,16 @@ body {
     2.5% 36%,
     2% 29%
   );
+}
+
+.leg__left-borde {
+  position: absolute;
+  top: -805px;
+  left: 340px;
+  width: 11px;
+  height: 17px;
+  background-color: var(--border-color);
+  clip-path: polygon(-100% -50%, 62% 42%, 53% 150%, 87% 39%);
 }
 
 .leg__nail-edge-left {
@@ -1633,6 +1661,16 @@ body {
     6.5% 14%,
     10% 6%
   );
+}
+
+.leg__right-border {
+  position: absolute;
+  top: -822px;
+  left: 155px;
+  width: 20px;
+  height: 17px;
+  background-color: var(--border-color);
+  clip-path: polygon(61% 0%, 1% 130%, 71% 20%, 112% 25%);
 }
 
 .leg__nail-edge-right-one,
