@@ -38,7 +38,8 @@ body {
       left top,
       left bottom,
       from(transparent),
-      to(rgba(255, 255, 255, 0.2))
+      to(rgba(255, 255, 255, 0.2)),
+      blur(3px)
     );
   overflow: hidden;
   animation-name: container;
