@@ -33,14 +33,7 @@ body {
   position: absolute;
   width: 770px;
   height: 700px;
-  -webkit-box-reflect: below -140px -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(transparent),
-      to(rgba(255, 255, 255, 0.2)),
-      blur(3px)
-    );
+  -webkit-box-reflect: below -140px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.2)));
   overflow: hidden;
   animation-name: container;
   animation-duration: 1s;
