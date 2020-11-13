@@ -88,7 +88,7 @@ The first thing I did were the eyes, so from the browser I increased the zoom to
 
 #### Let's continue with the antennas
 
-Here use a container between another container. Why? Well then to add a shadow that surrounds my entire antenna.
+Here i used a **div** between another **div**. Why? Well, to add a shadow that will surround my entire antenna.
 
 ```
 <div class = "head__antenna-edge-left">
